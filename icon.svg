@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <radialGradient id="icon-bg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
+    </radialGradient>
+    
+    <filter id="icon-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="24" cy="24" r="22" fill="url(#icon-bg)" stroke="#34495E" stroke-width="1"/>
+  
+  <!-- Speed lines -->
+  <g opacity="0.6">
+    <path d="M 8 16 Q 18 14 28 17" stroke="#E74C3C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M 10 24 Q 20 22 30 25" stroke="#E74C3C" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 9 32 Q 19 30 29 33" stroke="#E74C3C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Mouse cursor -->
+  <g transform="translate(30, 18) scale(1.2)">
+    <path d="M 0 0 L 0 12 L 4 8 L 6 10 L 8 8 L 4 4 Z" 
+          fill="#FFFFFF" 
+          stroke="#2C3E50" 
+          stroke-width="0.5" 
+          filter="url(#icon-glow)"/>
+  </g>
+  
+  <!-- Speed indicator -->
+  <circle cx="34" cy="24" r="6" fill="#E74C3C" opacity="0.8" filter="url(#icon-glow)"/>
+  <circle cx="34" cy="24" r="3" fill="#C0392B"/>
+  <circle cx="34" cy="24" r="1" fill="#FFFFFF"/>
+</svg>

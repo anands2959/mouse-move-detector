@@ -1,0 +1,53 @@
+Mouse Speed Detector - End User License Agreement (EULA)
+
+Copyright (c) 2024 Anand Kumar Sharma
+Portfolio: www.anandsharma.online
+
+This software is provided "as is", without warranty of any kind, express or implied, 
+including but not limited to the warranties of merchantability, fitness for a 
+particular purpose and noninfringement. In no event shall the authors or copyright 
+holders be liable for any claim, damages or other liability, whether in an action 
+of contract, tort or otherwise, arising from, out of or in connection with the 
+software or the use or other dealings in the software.
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+1. GRANT OF LICENSE
+   Subject to the terms and conditions of this License, the copyright holder hereby 
+   grants you a personal, non-transferable, non-exclusive license to use this software.
+
+2. REDISTRIBUTION
+   You may not redistribute, sell, or sublicense this software without explicit 
+   written permission from the copyright holder.
+
+3. MODIFICATIONS
+   You may modify the software for personal use only. Distribution of modified 
+   versions is not permitted without explicit written permission.
+
+4. ATTRIBUTION
+   You must retain all copyright notices and this license when using the software.
+
+5. DISCLAIMER OF WARRANTY
+   THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED 
+   OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY 
+   AND FITNESS FOR A PARTICULAR PURPOSE.
+
+6. LIMITATION OF LIABILITY
+   IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY SPECIAL, INCIDENTAL, 
+   INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER ARISING OUT OF THE USE OF OR 
+   INABILITY TO USE THIS SOFTWARE.
+
+7. TERMINATION
+   This license is effective until terminated. Your rights under this license will 
+   terminate automatically without notice if you fail to comply with any term(s) 
+   of this license.
+
+8. CONTACT INFORMATION
+   For questions about this license, please visit: www.anandsharma.online
+
+By installing and using this software, you acknowledge that you have read this 
+agreement, understand it, and agree to be bound by its terms and conditions.
+
+Developer: Anand Kumar Sharma
+Portfolio: www.anandsharma.online
+Email: Contact via portfolio website

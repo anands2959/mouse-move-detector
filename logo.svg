@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- Background circle with gradient -->
+  <defs>
+    <radialGradient id="bg-gradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Glow effect for cursor -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Motion blur effect -->
+    <filter id="motion-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2,0" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="128" cy="128" r="120" fill="url(#bg-gradient)" stroke="#34495E" stroke-width="4"/>
+  
+  <!-- Speed lines (motion trails) -->
+  <g opacity="0.6">
+    <path d="M 40 80 Q 90 70 140 85" stroke="#E74C3C" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#motion-blur)"/>
+    <path d="M 50 120 Q 100 110 150 125" stroke="#E74C3C" stroke-width="4" fill="none" stroke-linecap="round" filter="url(#motion-blur)"/>
+    <path d="M 45 160 Q 95 150 145 165" stroke="#E74C3C" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#motion-blur)"/>
+  </g>
+  
+  <!-- Mouse cursor icon (enlarged) -->
+  <g transform="translate(160, 100) scale(2.5)">
+    <!-- Cursor body -->
+    <path d="M 0 0 L 0 24 L 8 16 L 12 20 L 16 16 L 8 8 Z" 
+          fill="#FFFFFF" 
+          stroke="#2C3E50" 
+          stroke-width="1" 
+          filter="url(#glow)"/>
+    <!-- Cursor highlight -->
+    <path d="M 2 2 L 2 20 L 7 14 L 10 17 L 13 14 L 7 7 Z" 
+          fill="#ECF0F1" 
+          opacity="0.8"/>
+  </g>
+  
+  <!-- Speed indicator circle (enlarged cursor representation) -->
+  <circle cx="180" cy="120" r="25" fill="#E74C3C" opacity="0.7" filter="url(#glow)">
+    <animate attributeName="r" values="20;30;20" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Inner speed circle -->
+  <circle cx="180" cy="120" r="15" fill="#C0392B" opacity="0.9">
+    <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Center detection point -->
+  <circle cx="180" cy="120" r="4" fill="#FFFFFF"/>
+  
+  <!-- Text: Mouse Speed Detector -->
+  <text x="128" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="bold" 
+        text-anchor="middle" fill="#FFFFFF" opacity="0.9">
+    MOUSE SPEED
+  </text>
+  <text x="128" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="bold" 
+        text-anchor="middle" fill="#FFFFFF" opacity="0.9">
+    DETECTOR
+  </text>
+  
+  <!-- Developer signature -->
+  <text x="128" y="240" font-family="Arial, sans-serif" font-size="10" 
+        text-anchor="middle" fill="#BDC3C7" opacity="0.8">
+    by Anand Kumar Sharma
+  </text>
+</svg>

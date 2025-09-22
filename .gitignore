@@ -1,0 +1,25 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+*.pdb
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated installer files
+*.exe
+*.msi
+*.ico
+*.bmp
+*.png
+
+# Temporary files
+*.tmp
+*.temp
